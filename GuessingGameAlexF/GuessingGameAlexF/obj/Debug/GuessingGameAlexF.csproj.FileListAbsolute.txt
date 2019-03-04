@@ -1,0 +1,4 @@
+N:\StuShare\Semester 2 - Winter 2019\ICS3U Programming\Forgeron, Alexander (s244723)\Unit 3 (Decisions)\Guessing game\GuessingGameAlexF\GuessingGameAlexF\obj\Debug\GuessingGameAlexF.csprojResolveAssemblyReference.cache
+N:\StuShare\Semester 2 - Winter 2019\ICS3U Programming\Forgeron, Alexander (s244723)\Unit 3 (Decisions)\Guessing game\GuessingGameAlexF\GuessingGameAlexF\obj\Debug\GuessingGameAlexF.frmGuessingGame.resources
+N:\StuShare\Semester 2 - Winter 2019\ICS3U Programming\Forgeron, Alexander (s244723)\Unit 3 (Decisions)\Guessing game\GuessingGameAlexF\GuessingGameAlexF\obj\Debug\GuessingGameAlexF.Properties.Resources.resources
+N:\StuShare\Semester 2 - Winter 2019\ICS3U Programming\Forgeron, Alexander (s244723)\Unit 3 (Decisions)\Guessing game\GuessingGameAlexF\GuessingGameAlexF\obj\Debug\GuessingGameAlexF.csproj.GenerateResource.Cache
