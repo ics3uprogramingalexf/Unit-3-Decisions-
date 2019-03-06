@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A1E8167D-8BA4-45C8-952F-2B4A3EEB2087}</ProjectGuid>
+    <ProjectGuid>{B7C4B028-53D3-4B93-984A-9C4E5F2DA9D7}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>RockPaperScissorsAlexF</RootNamespace>
-    <AssemblyName>RockPaperScissorsAlexF</AssemblyName>
+    <RootNamespace>ChocolateBoxesAlexF</RootNamespace>
+    <AssemblyName>ChocolateBoxesAlexF</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -45,14 +45,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="RockPaperScissorsForm.cs">
+    <Compile Include="ChocolateBoxesForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RockPaperScissorsForm.Designer.cs">
-      <DependentUpon>RockPaperScissorsForm.cs</DependentUpon>
+    <Compile Include="ChocolateBoxesForm.Designer.cs">
+      <DependentUpon>ChocolateBoxesForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="RockPaperScissors.cs" />
+    <Compile Include="ChocolateBoxes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ChocolateBoxesForm.resx">
+      <DependentUpon>ChocolateBoxesForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -61,11 +64,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="RockPaperScissorsForm.resx">
-      <DependentUpon>RockPaperScissorsForm.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -78,18 +77,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\43417431-you-lose-red-stamp-text-on-white.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\70770406-you-win-red-stamp-text-on-white-background.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\43417431-you-lose-red-stamp-text-on-white.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\70770406-you-win-red-stamp-text-on-white-background.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
