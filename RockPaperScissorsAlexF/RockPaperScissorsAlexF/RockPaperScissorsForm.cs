@@ -21,9 +21,16 @@ namespace RockPaperScissorsAlexF
         public frmRockPaperScissors()
         {
             InitializeComponent();
+            grbCom.Enabled = false;
 
             // create the random number generator object
             randomNumberGenerator = new Random();
+        }
+
+        private void frmRockPaperScissors_Load(object sender, EventArgs e)
+        {
+            CPUInput = randomNumberGenerator.Next(MIN_VALUE, MAX_VALUE + 1);
+            lblResult.Hide();
         }
 
         private void btnPlay_Click(object sender, EventArgs e)
@@ -37,7 +44,7 @@ namespace RockPaperScissorsAlexF
             // get the user's selection, if there is no selection set it to 0
             if (radRock.Checked == true)
             {
-                playerChoice = ROCK; 
+                playerChoice = ROCK;
             }
             else if (radPaper.Checked == true)
             {
@@ -69,20 +76,68 @@ namespace RockPaperScissorsAlexF
                 this.radScissorsCom.Checked = true;
             }
 
-            // check to see who won
-            if (computerChoice == ROCK)
+            if (computerChoice == playerChoice)
             {
-
-
+                lblResult.Show();
+                lblResult.Text = "You Tied!";
 
             }
 
-
-        }
-
-        private void frmRockPaperScissors_Load(object sender, EventArgs e)
-        {
-            CPUInput = randomNumberGenerator.Next(MIN_VALUE, MAX_VALUE + 1);
+            if (computerChoice == ROCK)
+            {
+                if (playerChoice == ROCK)
+                {
+                    lblResult.Show();
+                    lblResult.Text = "You Tied!";
+                }
+                else if (playerChoice == PAPER)
+                {
+                    lblResult.Show();
+                    lblResult.Text = "You Win!";
+                }
+                else if (playerChoice == SCISSORS)
+                {
+                    lblResult.Show();
+                    lblResult.Text = "You Lose!";
+                }
+            }
+            else if (computerChoice == PAPER)
+            {
+                if (playerChoice == PAPER)
+                {
+                    lblResult.Show();
+                    lblResult.Text = "You Tied!";
+                }
+                else if (playerChoice == SCISSORS)
+                {
+                    lblResult.Show();
+                    lblResult.Text = "You Win!";
+                }
+                else if (playerChoice == ROCK)
+                {
+                    lblResult.Show();
+                    lblResult.Text = "You Lose!";
+                }
+            }
+            else if (computerChoice == SCISSORS)
+            {
+                if (playerChoice == SCISSORS)
+                {
+                    lblResult.Show();
+                    lblResult.Text = "You Tied!";
+                }
+                else if (playerChoice == ROCK)
+                {
+                    lblResult.Show();
+                    lblResult.Text = "You Win!";
+                }
+                else if (playerChoice == PAPER)
+                {
+                    lblResult.Show();
+                    lblResult.Text = "You Lose!";
+                }
+            }
         }
     }
 }
+                

@@ -36,11 +36,10 @@
             this.radScissorsCom = new System.Windows.Forms.RadioButton();
             this.radPaperCom = new System.Windows.Forms.RadioButton();
             this.radRockCom = new System.Windows.Forms.RadioButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnPlay = new System.Windows.Forms.Button();
+            this.lblResult = new System.Windows.Forms.Label();
             this.grbUser.SuspendLayout();
             this.grbCom.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // grbUser
@@ -133,16 +132,6 @@
             this.radRockCom.Text = "Rock";
             this.radRockCom.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::RockPaperScissorsAlexF.Properties.Resources._43417431_you_lose_red_stamp_text_on_white;
-            this.pictureBox1.Location = new System.Drawing.Point(330, 189);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(210, 201);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            // 
             // btnPlay
             // 
             this.btnPlay.Location = new System.Drawing.Point(236, 446);
@@ -153,15 +142,25 @@
             this.btnPlay.UseVisualStyleBackColor = true;
             this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
             // 
+            // lblResult
+            // 
+            this.lblResult.Font = new System.Drawing.Font("Tekton Pro", 71.99999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResult.ForeColor = System.Drawing.Color.Red;
+            this.lblResult.Location = new System.Drawing.Point(276, 149);
+            this.lblResult.Name = "lblResult";
+            this.lblResult.Size = new System.Drawing.Size(280, 241);
+            this.lblResult.TabIndex = 8;
+            this.lblResult.Text = "You\r\nTied!";
+            // 
             // frmRockPaperScissors
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(580, 544);
             this.Controls.Add(this.btnPlay);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.grbCom);
             this.Controls.Add(this.grbUser);
+            this.Controls.Add(this.lblResult);
             this.Name = "frmRockPaperScissors";
             this.Text = "Rock Paper Scissors Alex Forgeron";
             this.Load += new System.EventHandler(this.frmRockPaperScissors_Load);
@@ -169,7 +168,6 @@
             this.grbUser.PerformLayout();
             this.grbCom.ResumeLayout(false);
             this.grbCom.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -184,8 +182,8 @@
         private System.Windows.Forms.RadioButton radScissorsCom;
         private System.Windows.Forms.RadioButton radPaperCom;
         private System.Windows.Forms.RadioButton radRockCom;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnPlay;
+        private System.Windows.Forms.Label lblResult;
     }
 }
 

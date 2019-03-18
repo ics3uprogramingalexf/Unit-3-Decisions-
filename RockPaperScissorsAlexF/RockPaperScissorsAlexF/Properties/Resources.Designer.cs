@@ -59,45 +59,5 @@ namespace RockPaperScissorsAlexF.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _43417431_you_lose_red_stamp_text_on_white {
-            get {
-                object obj = ResourceManager.GetObject("43417431-you-lose-red-stamp-text-on-white", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _43417431_you_lose_red_stamp_text_on_white1 {
-            get {
-                object obj = ResourceManager.GetObject("43417431-you-lose-red-stamp-text-on-white1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _70770406_you_win_red_stamp_text_on_white_background {
-            get {
-                object obj = ResourceManager.GetObject("70770406-you-win-red-stamp-text-on-white-background", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _70770406_you_win_red_stamp_text_on_white_background1 {
-            get {
-                object obj = ResourceManager.GetObject("70770406-you-win-red-stamp-text-on-white-background1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }
